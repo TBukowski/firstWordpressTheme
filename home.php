@@ -1,4 +1,5 @@
 <?php get_header();?>
+<h1>HOME HOME HOME</h1>
 <img class="top_pic" src="<?php echo get_template_directory_uri(); ?>./consulting/main_img.png" alt="snowboarder">
                 <div class="outside_block"> <!--wrench color-->
                     <img class="wrench one" src="<?php echo get_template_directory_uri(); ?>./consulting/icon3.png" alt="wrench">
