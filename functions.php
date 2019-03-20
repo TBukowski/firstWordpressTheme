@@ -20,3 +20,19 @@ function load_js()
     wp_enqueue_script('scripts', get_template_directory_uri() . '/js/scripts.js', array( 'jquery' ), 1, true);
 }
 add_action('wp_enqueue_scripts', 'load_js');
+
+// custom post type function
+function create_post_type() {
+    // https://codex.wordpress.org/Function_Reference/register_post_type
+    register_post_type('testimonies',
+        // custom post type options
+        array(
+            'labels' => array(
+                'name' => __( 'Testimonies' ),
+                'singular_name' =>__( 'Testimony' )
+            ),
+            'public' => true
+        )
+    );
+}
+add_action( 'init', 'create_post_type' );
