@@ -50,8 +50,18 @@ get_header();
                 <div class="testimonial">
                     <h2>TESTIMONIAL</h2>
                     <div class="arrow"></div>
-                    <p>"I'm a testimonial. Click me to edit and add text that says 
-                        something nice about you and your services."</p>
+                    <?php
+                        $args = array( 'post_type' => 'testimonies', 'posts_per_page' => 1 );
+                        $loop = new WP_Query( $args );
+                            while ( $loop->have_posts() ) : $loop->the_post();
+                                the_title();
+                                echo '<div class="entry-content">';
+                                the_content();
+                                echo '</div>';
+                            endwhile
+                    ?>        
+                        <!-- <p>"I'm a testimonial. Click me to edit and add text that says 
+                            something nice about you and your services."</p> -->
                 </div>
                 <p class="manager">Samantha Jones, Project Manager</p>
 
