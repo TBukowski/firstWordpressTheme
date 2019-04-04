@@ -51,7 +51,10 @@ get_header();
                     <h2>TESTIMONIAL</h2>
                     <div class="arrow"></div>
                     <?php
-                        $args = array( 'post_type' => 'testimonies', 'posts_per_page' => 1 );
+                        $args = array( 
+                            'post_type' => 'testimonies', 
+                            'orderby'   => 'rand',
+                            'posts_per_page' => 1 );
                         $loop = new WP_Query( $args );
                             while ( $loop->have_posts() ) : $loop->the_post();
                                 the_title();
