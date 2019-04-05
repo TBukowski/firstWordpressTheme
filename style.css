@@ -192,7 +192,7 @@ input#goal_button{
     padding: 38px;
     cursor: pointer;
 }
-.testimonial .arrow{
+/* .testimonial .arrow{
     border-style: solid;
     position: relative;
     border-width: 10px 10px 0px 10px;
@@ -200,7 +200,7 @@ input#goal_button{
     bottom: -140px;
     margin-left: 25px;
     margin-right: 298px;
-}
+} */
 .bottom {
     border-color: #c8c8c8 transparent transparent transparent;
     border-width: 8px 8px 0px 8px;

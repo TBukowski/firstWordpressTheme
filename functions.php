@@ -36,3 +36,37 @@ function create_post_type() {
     );
 }
 add_action( 'init', 'create_post_type' );
+
+// add widget locations
+function home_widgets_init() {
+
+    register_sidebar( array (
+        'name'  => 'Left body block',
+        'id'    => 'left_block_1',
+        'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+    ) );
+
+    register_sidebar( array (
+        'name'  => 'Center body block',
+        'id'    => 'center_block_1',
+        'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+    ) );
+
+    register_sidebar( array (
+        'name'  => 'Right body block',
+        'id'    => 'right_block_1',
+        'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+    ) );
+}
+add_action( 'widgets_init', 'home_widgets_init' );
+
+?>
