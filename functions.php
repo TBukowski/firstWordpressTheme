@@ -43,18 +43,18 @@ function home_widgets_init() {
     register_sidebar( array (
         'name'  => 'Left body block',
         'id'    => 'left_block_1',
-        'before_widget' => '<div>',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h2 class="rounded">',
-		'after_title'   => '</h2>',
+        'before_widget' => '<div class="widget-item">',
+		'after_widget'  => '</div>'
+		// 'before_title'  => '<h2>',
+		// 'after_title'   => '</h2>',
     ) );
 
     register_sidebar( array (
         'name'  => 'Center body block',
         'id'    => 'center_block_1',
-        'before_widget' => '<div>',
+        'before_widget' => '<div class="widget-item">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h2 class="rounded">',
+		'before_title'  => '<h2>',
 		'after_title'   => '</h2>',
     ) );
 
@@ -63,10 +63,69 @@ function home_widgets_init() {
         'id'    => 'right_block_1',
         'before_widget' => '<div>',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h2 class="rounded">',
+		'before_title'  => '<h2>',
 		'after_title'   => '</h2>',
     ) );
 }
 add_action( 'widgets_init', 'home_widgets_init' );
+
+// Register and load the widget
+function load_block_widget() {
+    register_widget( 'block_widget' );
+}
+add_action( 'widgets_init', 'load_block_widget' );
+ 
+// Create the widget 
+class Block_Widget extends WP_Widget {
+
+    function __construct() {
+        parent::__construct(
+            'block_widget', // Base ID of widget
+            esc_html__('Block Widget', 'block_widget_domain'), // Widget name will appear in UI 
+            array( 'description' => __( 'Block style widget used to add description for a specific navigation button', 'block_widget_domain' ), ) // Args
+        );
+    }
+ 
+    // Widget front-end
+    
+    public function widget( $args, $instance ) {
+        $title = apply_filters( 'widget_title', $instance['title'] );
+        
+        // before and after widget arguments are defined by themes
+        echo $args['before_widget'];
+        if ( ! empty( $title ) )
+            echo $args['before_title'] . $title . $args['after_title'];
+        
+        // This is where you run the code and display the output
+        echo esc_html__( 'line 100 coded text', 'block_widget_domain' );
+        echo $args['after_widget'];
+    }
+         
+    // Widget Backend 
+    public function form( $instance ) {
+        if ( isset( $instance[ 'title' ] ) ) {
+            $title = $instance[ 'title' ];
+        }
+        else {
+            $title = __( 'body block', 'block_widget_domain' );
+        }
+
+        // Widget admin form
+        ?>
+        <p>
+            <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' ); ?></label> 
+            <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
+        </p>
+        <?php 
+    }
+        
+    // Updating widget replacing old instances with new
+    public function update( $new_instance, $old_instance ) {
+        $instance = array();
+        $instance['title'] = ( ! empty( $new_instance['title'] ) ) ? sanitize_text_field( $new_instance['title'] ) : '';
+        
+        return $instance;
+    }
+}
 
 ?>
