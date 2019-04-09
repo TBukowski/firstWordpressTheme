@@ -128,4 +128,5 @@ class Block_Widget extends WP_Widget {
     }
 }
 
+add_theme_support( 'post-thumbnails' );
 ?>

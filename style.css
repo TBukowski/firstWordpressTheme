@@ -88,16 +88,16 @@ nav ul li a{
     margin-top: 10px;
     margin-left: 10px;
 }
+
+/* TODO: Do not duplicate block/widget styling */
 .outside_block h2{
     display: inline-block;
-    position: absolute;
     color: white;
     margin-top: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
 }
 .inside_block h2{
-    position: absolute;
     display: inline-block;
     color: white;
     margin-top: 20px; 
@@ -143,8 +143,9 @@ nav ul li a{
     background: -o-linear-gradient(#4cafed 50%, #1991de 50%);
     background: linear-gradient(#4cafed 50%, #1991de 50%);
 }
+/* LOOK INTO FLEX BOX OR CSS GRID */
 .goal{
-    width: 610px;
+    width: 66%;
     display: inline-block;
 }
 .goal h2{
@@ -154,18 +155,19 @@ nav ul li a{
     font-size: 21px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
+    text-align: center;
 }
 .goal img{
     margin: 0px 10px;
-    width: 293px;
-    height: 162px;
+    width: 80%;
+    height: auto;
 }
 .goal p{
-    height: 126px;
-    width: 293px; 
+    height: auto;
+    width: 70%; 
     font-size: small;
-    display: inline-block;
-    vertical-align: top;
+    display: block;
+    text-align: center;
 }
 input#goal_button{
     background: none;
@@ -175,8 +177,8 @@ input#goal_button{
     margin: 15px 0px 0px 15px;
 }
 .testimonial{
-    height: 195px;
-    width: 318px;
+    height: auto;
+    width: 30%;
     vertical-align: top;
     display: inline-block;
 }
@@ -233,4 +235,19 @@ input#goal_button{
 }
 .footer ul li a{
     color: #4e82a8;
+}
+
+.body_blocks .icon-widget {
+    text-align: center !important;
+}
+
+.body_blocks .icon-widget > i {
+    color: #fff !important;
+}
+
+.body_blocks .icon-widget > i:before {
+    content: '';
+    background-color: darkblue;
+    border-radius: 20px;
+    padding: 10px;
 }
