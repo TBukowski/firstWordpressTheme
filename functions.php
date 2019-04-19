@@ -44,9 +44,9 @@ function home_widgets_init() {
         'name'  => 'Left body block',
         'id'    => 'left_block_1',
         'before_widget' => '<div class="widget-item">',
-		'after_widget'  => '</div>'
-		// 'before_title'  => '<h2>',
-		// 'after_title'   => '</h2>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2>',
+		'after_title'   => '</h2>',
     ) );
 
     register_sidebar( array (

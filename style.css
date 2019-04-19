@@ -158,7 +158,7 @@ nav ul li a{
     text-align: center;
 }
 .goal img{
-    margin: 0px 10px;
+    margin: 0px 15px 0px 35px;
     width: 80%;
     height: auto;
 }
@@ -237,7 +237,25 @@ input#goal_button{
     color: #4e82a8;
 }
 
-.body_blocks .icon-widget {
+.icon-widget i {
+    margin: 15px;
+}
+
+.icon-widget br {
+    display: none;
+}
+
+.icon-widget {
+    width: auto;
+    float: left;
+}
+
+.widget-item .widgettitle {
+    width: auto;
+    float: right
+}
+
+/* .body_blocks .icon-widget {
     text-align: center !important;
 }
 
@@ -250,4 +268,4 @@ input#goal_button{
     background-color: darkblue;
     border-radius: 20px;
     padding: 10px;
-}
+} */

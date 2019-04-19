@@ -12,7 +12,7 @@ get_header();
 <?php endif; ?>
                 <div class="body_blocks">
                     <?php if (is_active_sidebar( 'left_block_1' )) : ?>
-                        <div class="outside_block left_block"> <!--wrench color-->
+                        <div class="outside_block left_block">
                             <?php dynamic_sidebar( 'left_block_1' ); ?>
                             
                         </div>
