@@ -6,8 +6,10 @@
     </head>
     <body>
         <div class="wrapper">
-            <div class="header">
-                <h1><span class="white">JAMES</span><span class="blue"> CONSULTING</span></h1>
+            <header class="header-container">
+                <div class="logo">
+                    <h1><span class="white">JAMES</span><span class="blue"> CONSULTING</span></h1>
+                </div>                    
                 <nav> 
                     <ul>
                         <li class="home_top"><a href="#">Home</a></li>
@@ -17,6 +19,6 @@
                         <li><a href="#">Clients</a></li>
                     </ul>
                 </nav>
-                <!--</div>-->
-            </div>
+            </header>
+            
             <div class="main_content">

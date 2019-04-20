@@ -8,7 +8,7 @@ A short bit about the project.
 - Create home page that uses home page page template -Done
 - Create testimonials post type -Dope
 - On home page template, query for and display testimonials post type in testimonials section -Done
-- Create 3 widget areas on home page page template and widget -In progress
-- Load featured image, if set, on home page page template
+- Create 3 widget areas on home page page template and widget -Done
+- Load featured image, if set, on home page page template -Done
 - Echo the content in bottom left if there is content
-- icon widget: Use :after or :before to add a dark circle behind icon
+- icon widget: Use :after or :before to add a dark circle behind icon -Done (used built in wordpress attributes)
