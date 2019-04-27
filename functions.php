@@ -43,7 +43,7 @@ function home_widgets_init() {
     register_sidebar( array (
         'name'  => 'Left body block',
         'id'    => 'left_block_1',
-        'before_widget' => '<div class="widget-item">',
+        'before_widget' => '<div>',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h2>',
 		'after_title'   => '</h2>',
@@ -52,7 +52,7 @@ function home_widgets_init() {
     register_sidebar( array (
         'name'  => 'Center body block',
         'id'    => 'center_block_1',
-        'before_widget' => '<div class="widget-item">',
+        'before_widget' => '<div>',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h2>',
 		'after_title'   => '</h2>',

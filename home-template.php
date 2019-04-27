@@ -12,21 +12,21 @@ get_header();
 <?php endif; ?>
                 <div class="body_blocks">
                     <?php if (is_active_sidebar( 'left_block_1' )) : ?>
-                        <div class="outside_block left_block">
+                        <div class="left_block">
                             <?php dynamic_sidebar( 'left_block_1' ); ?>
                             
                         </div>
                     <?php endif; ?>
 
                     <?php if (is_active_sidebar( 'center_block_1' )) : ?>
-                        <div class="inside_block center_block">
+                        <div class="center_block">
                             <?php dynamic_sidebar( 'center_block_1' ); ?>
 
                         </div>
                     <?php endif; ?>
 
                     <?php if (is_active_sidebar( 'right_block_1' )) : ?>
-                        <div class="outside_block right_block">
+                        <div class="right_block">
                             <?php dynamic_sidebar( 'right_block_1' ); ?>
                         </div>
                     <?php endif; ?>

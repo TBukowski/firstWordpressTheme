@@ -4,19 +4,7 @@ Author: Ty Bukowski;
 Theme URI: http://www.tybukowski.dev.cc/
 */
 
-@media screen and (min-width: 900px){
-    .header-container {
-        flex-direction: row;
-        justify-content: space-between;
-      }
-      .logo {
-        margin-left: 2.3em;
-      }
-      nav {
-        align-self: center;
-        margin: 0 0.8em 0 0;
-    }
-}
+
     body *{
         margin: 0px;
         padding: 0px;
@@ -31,6 +19,8 @@ Theme URI: http://www.tybukowski.dev.cc/
         text-decoration: none;
         /*color: white;*/
     }
+
+    /* HEADER */
     .header-container{
         display: flex;
         flex-direction: column;
@@ -39,7 +29,6 @@ Theme URI: http://www.tybukowski.dev.cc/
 
     .logo{
         margin-left: 5%;
-        flex-basis: auto;
     }
 
     .logo h1{
@@ -93,18 +82,60 @@ Theme URI: http://www.tybukowski.dev.cc/
     .home_top a{
         color: #33688e;
     }
+
+    @media screen and (min-width: 900px){
+        .header-container {
+            flex-direction: row;
+            justify-content: space-between;
+          }
+          .logo {
+            margin-left: 2.3em;
+          }
+          nav {
+            align-self: center;
+            margin: 0 0.8em 0 0;
+        }
+    }
+
     .main_content{
         width: 98%;
         height: auto;
         margin-left: 9px;
         background-color: white;
     }
+
+    /* FEATURED IMAGE */
     .top_pic{
         height: auto;
         width: 97%;
         margin: 13px;
     }
-    .outside_block{
+
+    /* BODY BLOCK WIDGETS */
+    .body_blocks{
+        display: flex;
+        flex-direction: column
+    }
+
+    .left_block{
+
+    }
+
+    .center_block{
+
+    }
+
+    .right_block{
+
+    }
+
+    @media screen and (min-width: 900px) {
+        .body_blocks{
+            flex-direction: row;
+        }
+    }
+
+    /* .outside_block{
         width: 31%;
         height: 27%;
         margin: 0px 12px;
@@ -126,10 +157,10 @@ Theme URI: http://www.tybukowski.dev.cc/
         width: 35px;
         margin-top: 10px;
         margin-left: 10px;
-    }
+    } */
 
     /* TODO: Do not duplicate block/widget styling */
-    .outside_block h2{
+    /* .outside_block h2{
         display: inline-block;
         color: white;
         margin-top: 20px;
@@ -181,7 +212,7 @@ Theme URI: http://www.tybukowski.dev.cc/
         background: -moz-linear-gradient(#4cafed 50%, #1991de 50%);
         background: -o-linear-gradient(#4cafed 50%, #1991de 50%);
         background: linear-gradient(#4cafed 50%, #1991de 50%);
-    }
+    } */
     /* LOOK INTO FLEX BOX OR CSS GRID */
     .goal{
         width: 66%;
