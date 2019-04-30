@@ -28,7 +28,7 @@ Theme URI: http://www.tybukowski.dev.cc/
     }
 
     .logo{
-        margin-left: 5%;
+        align-self: center;
     }
 
     .logo h1{
@@ -114,7 +114,16 @@ Theme URI: http://www.tybukowski.dev.cc/
     /* BODY BLOCK WIDGETS */
     .body_blocks{
         display: flex;
-        flex-direction: column
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .block_widget{
+        margin: 2px 12px;
+        padding-right: 2px;
+        vertical-align: top;
+        background-color: #1468a8;
+        color: white;
     }
 
     .left_block{
@@ -132,6 +141,7 @@ Theme URI: http://www.tybukowski.dev.cc/
     @media screen and (min-width: 900px) {
         .body_blocks{
             flex-direction: row;
+            justify-content: space-around;
         }
     }
 
