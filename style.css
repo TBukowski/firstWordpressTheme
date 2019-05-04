@@ -64,13 +64,7 @@ Theme URI: http://www.tybukowski.dev.cc/
     .blue{
         color: #1b99e8;
     }
-    /* .header nav{
-        display: inline-block;
-        margin: 10px 0px 10px 10px;
-    }
-    nav ul{
-        padding: 14px;
-    } */
+
     nav ul li{
         display: inline-block;
         color: white;
@@ -107,7 +101,7 @@ Theme URI: http://www.tybukowski.dev.cc/
     /* FEATURED IMAGE */
     .top_pic{
         height: auto;
-        width: 97%;
+        width: 98%;
         margin: 13px;
     }
 
@@ -126,16 +120,40 @@ Theme URI: http://www.tybukowski.dev.cc/
         color: white;
     }
 
-    .left_block{
-
+    .body_blocks button {
+        background-color: lightblue;
+        color: white;
+        border-radius: 3px;
+        padding: 5px 20px;
+        margin: 15px;
+        border: none;
+        background: linear-gradient(#4cafed 50%, #1991de 50%);
+    }
+    
+    .icon-widget i {
+        margin: 15px;
     }
 
-    .center_block{
-
+    .icon-widget {
+        width: auto;
+        float: left;
     }
 
-    .right_block{
+    .widget-item .widgettitle {
+        width: auto;
+        float: right
+    }
 
+    .textwidget p {
+        margin: 16px 10px 0px;
+    }
+
+    .textwidget h2 {
+        margin-top: 18px;
+    }
+
+    .textwidget button {
+        float: right;
     }
 
     @media screen and (min-width: 900px) {
@@ -143,93 +161,23 @@ Theme URI: http://www.tybukowski.dev.cc/
             flex-direction: row;
             justify-content: space-around;
         }
+
+        .textwidget button {
+            float: left;
+        }
     }
 
-    /* .outside_block{
-        width: 31%;
-        height: 27%;
-        margin: 0px 12px;
-        padding-right: 2px;
-        display: inline-block;
-        vertical-align: top;
-        background-color: #1468a8;
+    .bottom_content {
+        display: flex;
     }
-    .inside_block{
-        width: 31%;
-        height: 27%;
-        padding-right: 2px;
-        display: inline-block;
-        vertical-align: top;
-        background-color: #1468a8;
-    }
-    .wrench{
-        height: 35px;
-        width: 35px;
-        margin-top: 10px;
-        margin-left: 10px;
-    } */
 
-    /* TODO: Do not duplicate block/widget styling */
-    /* .outside_block h2{
-        display: inline-block;
-        color: white;
-        margin-top: 20px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 400;
-    }
-    .inside_block h2{
-        display: inline-block;
-        color: white;
-        margin-top: 20px; 
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 400;
-    }
-    .outside_block p{
-        color: white;
-        margin: 15px;
-    }
-    .inside_block p{
-        color: white;
-        margin: 15px;
-    }
-    .outside_block button{
-        background-color: lightblue;
-        color: white;
-        height: 30px;
-        width: 120px;
-        border-radius: 3px;
-        padding: 5px 20px;
-        margin-left: 15px;
-        margin-top: 10px;
-        border: none;
-        background: -webkit-linear-gradient(#4cafed 50%, #1991de 50%);
-        background: -moz-linear-gradient(#4cafed 50%, #1991de 50%);
-        background: -o-linear-gradient(#4cafed 50%, #1991de 50%);
-        background: linear-gradient(#4cafed 50%, #1991de 50%);
-
-    }
-    .inside_block button{
-        background-color: #4cafed;
-        color: white;
-        height: 30px;
-        width: 120px;
-        border-radius: 3px;
-        padding: 5px 20px;
-        margin-left: 15px;
-        margin-top: 10px;
-        border: none;
-        background: -webkit-linear-gradient(#4cafed 50%, #1991de 50%);
-        background: -moz-linear-gradient(#4cafed 50%, #1991de 50%);
-        background: -o-linear-gradient(#4cafed 50%, #1991de 50%);
-        background: linear-gradient(#4cafed 50%, #1991de 50%);
-    } */
-    /* LOOK INTO FLEX BOX OR CSS GRID */
+    /* GOAL */
     .goal{
-        width: 66%;
-        display: inline-block;
+        flex: 2;
+        display: flex;
+        flex-direction: column;
     }
     .goal h2{
-        width: 316px;
         font-family: Arial, Helvetica, sans-serif;
         margin: 20px 0px 10px 10px;
         font-size: 21px;
@@ -238,29 +186,46 @@ Theme URI: http://www.tybukowski.dev.cc/
         text-align: center;
     }
     .goal img{
-        margin: 0px 15px 0px 35px;
-        width: 80%;
+        width: 100%;
         height: auto;
+        padding: 1em;
     }
-    .goal p{
-        height: auto;
-        width: 70%; 
-        font-size: small;
-        display: block;
+
+    .goal_text {
+        flex: 1;
         text-align: center;
     }
-    input#goal_button{
+
+    .goal p{
+        /* text-align: center; */
+        padding: 1em;
+    }
+    #goal_button{
         background: none;
         border: none;
         color: #5788aa;
         font-size: 17px;
-        margin: 15px 0px 0px 15px;
     }
+
+    .headline_pic {
+        flex: 2;
+    }
+
+    @media screen and (min-width: 1100px) {
+        .goal {
+            flex-direction: row;
+        }
+
+        .goal p {
+            margin-top: 2em;
+        }
+    }
+
+    /* TESTIMONIAL */
     .testimonial{
         height: auto;
-        width: 30%;
-        vertical-align: top;
-        display: inline-block;
+        flex: 1;
+        margin: 2px;
     }
     .testimonial h2{
         font-family: Arial, Helvetica, sans-serif;
@@ -283,6 +248,13 @@ Theme URI: http://www.tybukowski.dev.cc/
         margin-left: 25px;
         margin-right: 298px;
     } */
+
+    @media screen and (max-width: 1000px) {
+        .testimonial {
+            display: none;
+        }
+    }
+
     .bottom {
         border-color: #c8c8c8 transparent transparent transparent;
         border-width: 8px 8px 0px 8px;
@@ -316,36 +288,3 @@ Theme URI: http://www.tybukowski.dev.cc/
     .footer ul li a{
         color: #4e82a8;
     }
-
-    .icon-widget i {
-        margin: 15px;
-    }
-
-    .icon-widget br {
-        display: none;
-    }
-
-    .icon-widget {
-        width: auto;
-        float: left;
-    }
-
-    .widget-item .widgettitle {
-        width: auto;
-        float: right
-    }
-
-    /* .body_blocks .icon-widget {
-        text-align: center !important;
-    }
-
-    .body_blocks .icon-widget > i {
-        color: #fff !important;
-    }
-
-    .body_blocks .icon-widget > i:before {
-        content: '';
-        background-color: darkblue;
-        border-radius: 20px;
-        padding: 10px;
-    } */
