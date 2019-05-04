@@ -36,18 +36,33 @@ get_header();
                     <div class="goal">
                         <div class="headline_pic">
                             <h2>THE WORLD CAN BE YOURS!</h2>
+                            <?php
+                                get_the_title( 'goals' )
+                            ?>
                             <img src="<?php echo get_template_directory_uri(); ?>./consulting/building.png" alt="building">
                         </div>
-                        <div class="goal_text">
+                        <!-- <div class="goal_text">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a mauris id lorem ullamcorper imperdiet. 
                                 Sollicitudin nulla semper massa feugiat mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Ut a mauris id lorem ullamcorper imperdiet. Praesent sollicitudin nulla semper massa feugiat mattis.</p>
+                                Ut a mauris id lorem ullamcorper imperdiet. Praesent sollicitudin nulla semper massa feugiat mattis.</p> -->
+                            <?php
+                                $args = array(
+                                    'post_type' => 'goals',
+                                    'posts_per_page' => 1 );
+                                $loop = new WP_Query( $args );
+                                    while ( $loop->have_posts() ) : $loop->the_post();
+                                        echo '<div class="goal_text">';
+                                        get_the_title();
+                                        the_content();
+                                        echo '</div>';
+                                    endwhile
+                            ?>
                             <input type="submit" value="Learn more" id="goal_button">
-                        </div>
+                        <!-- </div> -->
                     </div>
                     <div class="testimonial">
                         <h2>TESTIMONIAL</h2>
-                        <div class="arrow"></div>
+                        <!-- <div class="arrow"></div> -->
                         <?php
                             $args = array( 
                                 'post_type' => 'testimonies', 

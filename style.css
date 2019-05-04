@@ -225,7 +225,7 @@ Theme URI: http://www.tybukowski.dev.cc/
     .testimonial{
         height: auto;
         flex: 1;
-        margin: 2px;
+        margin: .5em;
     }
     .testimonial h2{
         font-family: Arial, Helvetica, sans-serif;

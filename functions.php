@@ -21,7 +21,7 @@ function load_js()
 }
 add_action('wp_enqueue_scripts', 'load_js');
 
-// custom post type function
+// testimonies post type function
 function create_post_type() {
     // https://codex.wordpress.org/Function_Reference/register_post_type
     register_post_type('testimonies',
@@ -29,12 +29,24 @@ function create_post_type() {
         array(
             'labels' => array(
                 'name' => __( 'Testimonies' ),
-                'singular_name' =>__( 'Testimony' )
+                'singular_name' => __( 'Testimony' )
+            ),
+            'public' => true
+        )
+    );
+    // goal post type function
+    register_post_type( 'goals',
+        // custom post type ooptions
+        array(
+            'labels' => array(
+                'name' => __( 'Goals' ),
+                'singular_name' => __( 'Goal' )
             ),
             'public' => true
         )
     );
 }
+
 add_action( 'init', 'create_post_type' );
 
 // add widget locations
