@@ -54,10 +54,13 @@ get_header();
                                         echo '<div class="goal_text">';
                                         get_the_title();
                                         the_content();
+                            ?>
+                                        <input type="submit" value="Learn more" id="goal_button">
+                            <?php
                                         echo '</div>';
                                     endwhile
                             ?>
-                            <input type="submit" value="Learn more" id="goal_button">
+                            
                         <!-- </div> -->
                     </div>
                     <div class="testimonial">

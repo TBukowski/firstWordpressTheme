@@ -12,3 +12,4 @@ A short bit about the project.
 - Load featured image, if set, on home page page template -Done
 - Echo the content in bottom left if there is content
 - icon widget: Use :after or :before to add a dark circle behind icon -Done (used built in wordpress attributes)
+- Make header / footer nav bars fully functional

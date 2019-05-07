@@ -8,7 +8,7 @@
         <div class="wrapper">
             <header class="header-container">
                 <div class="logo">
-                    <h1><span class="white">JAMES</span><span class="blue"> CONSULTING</span></h1>
+                    <h1><a href="<?php echo home_url(); ?>"><span class="white">JAMES</span><span class="blue"> CONSULTING</span></a></h1>
                 </div>                    
                 <nav> 
                     <ul>

@@ -239,6 +239,10 @@ Theme URI: http://www.tybukowski.dev.cc/
         padding: 38px;
         cursor: pointer;
     }
+
+    .entry-content {
+        border: outset 3px #b6d8fe;
+    }
     /* .testimonial .arrow{
         border-style: solid;
         position: relative;
