@@ -10,14 +10,24 @@
                 <div class="logo">
                     <h1><a href="<?php echo home_url(); ?>"><span class="white">JAMES</span><span class="blue"> CONSULTING</span></a></h1>
                 </div>                    
-                <nav> 
-                    <ul>
+                <nav class="site_nav"> 
+
+                    <?php
+
+                        $args = array(
+                            'theme_location' => 'primary'
+                        );
+                    
+                    ?>
+
+                    <?php wp_nav_menu( $args ); ?>
+                    <!-- <ul>
                         <li class="home_top"><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Services</a></li>
                         <li><a href="#">Projects</a></li>
                         <li><a href="#">Clients</a></li>
-                    </ul>
+                    </ul> -->
                 </nav>
             </header>
             
