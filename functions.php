@@ -141,4 +141,10 @@ class Block_Widget extends WP_Widget {
 }
 
 add_theme_support( 'post-thumbnails' );
+
+// Navigation menus
+register_nav_menus( array( 
+    'primary' => __( 'Primary Menu' ),
+    'footer' => __( 'Footer Menu' )
+));
 ?>
