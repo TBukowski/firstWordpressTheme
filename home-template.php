@@ -41,10 +41,6 @@ get_header();
                             ?>
                             <img src="<?php echo get_template_directory_uri(); ?>./consulting/building.png" alt="building">
                         </div>
-                        <!-- <div class="goal_text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a mauris id lorem ullamcorper imperdiet. 
-                                Sollicitudin nulla semper massa feugiat mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Ut a mauris id lorem ullamcorper imperdiet. Praesent sollicitudin nulla semper massa feugiat mattis.</p> -->
                             <?php
                                 $args = array(
                                     'post_type' => 'goals',
