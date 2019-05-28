@@ -8,7 +8,7 @@ get_header();
 ?>
 
 <?php if (has_post_thumbnail()) : ?>
-    <img class="top_pic" src="<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>" alt="snowboarder">
+    <img class="top_pic" src="<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>" alt="front street">
 <?php endif; ?>
                 <div class="body_blocks">
                     <?php if (is_active_sidebar( 'left_block_1' )) : ?>
