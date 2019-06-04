@@ -45,6 +45,16 @@ function create_post_type() {
             'public' => true
         )
     );
+    // about post type 
+    register_post_type( 'about',
+        // custom post type options
+        array(
+            'labels' => array(
+                'name' =>__( 'About' )
+            ),
+            'public' => true
+        )
+    );
 }
 
 add_action( 'init', 'create_post_type' );

@@ -20,4 +20,17 @@ get_header();?>
 
     endif; ?>
 
+    <?php
+        $args = array(
+            'post_type' => 'about',
+            'posts_per_page' => 1 );
+        $loop = new WP_Query( $args );
+            while ( $loop->have_posts() ) : $loop->the_post();
+                echo '<div class="about_text">';
+                the_content();
+                echo '</div>';
+            endwhile
+    ?>
+
+
 <?php get_footer();?>
