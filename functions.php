@@ -88,6 +88,13 @@ function home_widgets_init() {
 		'before_title'  => '<h2>',
 		'after_title'   => '</h2>',
     ) );
+
+    register_sidebar( array (
+        'name' => 'Secondary image block',
+        'id' => 'secondary_image_block',
+        'before_widget' => '<div class="secondary-image">',
+        'after_widget' => '</div>',
+    ) );
 }
 add_action( 'widgets_init', 'home_widgets_init' );
 

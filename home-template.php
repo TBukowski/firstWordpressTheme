@@ -39,7 +39,10 @@ get_header();
                             <?php
                                 get_the_title( 'goals' )
                             ?>
-                            <img src="<?php echo get_template_directory_uri(); ?>./consulting/building.png" alt="building">
+                            <!-- <img src="<?php echo get_template_directory_uri(); ?>./consulting/building.png" alt="building"> -->
+                            <?php if (is_active_sidebar( 'secondary_image_block' )) : ?>
+                                    <?php dynamic_sidebar( 'secondary_image_block' ); ?>
+                            <?php endif; ?>
                         </div>
                             <?php
                                 $args = array(
