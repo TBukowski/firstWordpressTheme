@@ -10,6 +10,7 @@ A short bit about the project.
 - On home page template, query for and display testimonials post type in testimonials section -Done
 - Create 3 widget areas on home page page template and widget -Done
 - Load featured image, if set, on home page page template -Done
-- Echo the content in bottom left if there is content
+- Echo the content in bottom left if there is content -Done
 - icon widget: Use :after or :before to add a dark circle behind icon -Done (used built in wordpress attributes)
-- Make header / footer nav bars fully functional
+- Make header / footer nav bars fully functional -Done
+- Style sub pages
