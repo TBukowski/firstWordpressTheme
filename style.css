@@ -25,6 +25,7 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 1em 0em 0em 0em;
 }
 
 .logo{
@@ -81,6 +82,7 @@ nav ul li a{
     .header-container {
         flex-direction: row;
         justify-content: space-between;
+        padding: 1em 0em 0em 0em;
         }
         .logo {
         margin-left: 2.3em;
@@ -304,7 +306,11 @@ nav ul li a{
     margin: 0px;
 }
 
-
+/* INDEX TEMPLATE */
+.index-content{
+    margin: 1em 2em;
+    padding: 1em 0;
+}
 
 /* ABOUT GALLERY */
 /* .gallery {
