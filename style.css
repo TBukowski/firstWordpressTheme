@@ -4,11 +4,11 @@ Author: Ty Bukowski;
 Theme URI: http://www.tybukowski.dev.cc/
 */
 
-
+/* 
 body *{
     margin: 0px;
     padding: 0px;
-}
+} */
 .wrapper{
     width: 100%;
     height: auto;
@@ -17,7 +17,6 @@ body *{
 }
 a{
     text-decoration: none;
-    /*color: white;*/
 }
 
 /* HEADER */
@@ -25,7 +24,7 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 1em 0em 0em 0em;
+    padding: 2em 0em 1em 0em;
 }
 
 .logo{
@@ -74,9 +73,9 @@ nav ul li{
 nav ul li a{
     color:white;
 }
-.home_top a{
+/* .home_top a{
     color: #33688e;
-}
+} */
 
 @media screen and (min-width: 900px){
     .header-container {
@@ -263,7 +262,7 @@ nav ul li a{
     }
 }
 
-.bottom {
+/* .bottom {
     border-color: #c8c8c8 transparent transparent transparent;
     border-width: 8px 8px 0px 8px;
     bottom: -8px;
@@ -273,7 +272,7 @@ nav ul li a{
     position: relative;
     left: 615px;
     top: -20px;
-}  
+}   */
 
 /* FOOTER */
 .footer{
@@ -310,6 +309,38 @@ nav ul li a{
 .index-content{
     margin: 1em 2em;
     padding: 1em 0;
+}
+
+.index-content h2{
+    padding: .5em 0 1em 0;
+}
+
+.page-heading{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1em;
+    border-bottom: 5px double #062134;
+}
+
+.project-heading{
+    /* grid-area: heading; */
+}
+
+.project-image{
+    /* grid-area: image; */
+}
+
+.project-text{
+    /* grid-area: description; */
+}
+
+.content-area{
+    /* display: grid;
+    grid-template-areas:
+    'header text'
+    'pic text';
+    grid-gap: 5px;
+    padding: 10px; */
 }
 
 /* ABOUT GALLERY */
