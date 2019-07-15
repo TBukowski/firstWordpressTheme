@@ -322,6 +322,24 @@ nav ul li a{
     border-bottom: 5px double #062134;
 }
 
+/* PROJECT PAGE */
+
+.project-title-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 1;
+}
+.group1{
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-text{
+    /* grid-area: description; */
+    flex: 1;
+}
+
 .project-heading{
     /* grid-area: heading; */
 }
@@ -330,9 +348,7 @@ nav ul li a{
     /* grid-area: image; */
 }
 
-.project-text{
-    /* grid-area: description; */
-}
+
 
 .content-area{
     /* display: grid;
