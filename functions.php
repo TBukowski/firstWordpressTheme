@@ -63,6 +63,13 @@ add_action( 'init', 'create_post_type' );
 function home_widgets_init() {
 
     register_sidebar( array (
+        'name' => 'Index sidebar',
+        'id' => 'index_sidebar',
+        'before_widget' => '<div class="index-sidebar">',
+        'after_widget' => '</div>',
+    ) );
+
+    register_sidebar( array (
         'name'  => 'Left body block',
         'id'    => 'left_block_1',
         'before_widget' => '<div>',

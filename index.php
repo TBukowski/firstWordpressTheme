@@ -7,6 +7,11 @@
                         <h1 class="page-heading"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
                         <?php the_content(); ?>
                     </div>
+                    <?php if (is_active_sidebar( 'index_sidebar' )) : ?>
+                        <div>
+                            <?php dynamic_sidebar( 'index_sidebar' ); ?>
+                        </div>
+                    <?php endif; ?>
                 </div>
             <?php endwhile; ?>
         <?php endif; ?>

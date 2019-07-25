@@ -348,32 +348,26 @@ nav ul li a{
     /* grid-area: image; */
 }
 
-
-
-.content-area{
-    /* display: grid;
-    grid-template-areas:
-    'header text'
-    'pic text';
-    grid-gap: 5px;
-    padding: 10px; */
+/* SERVICES PAGE */
+.service-info{
+    margin: 2em;
 }
 
-/* ABOUT GALLERY */
-/* .gallery {
-    margin: auto;
-  }
-  
-  .gallery .gallery-item {
-    float: left;
-    margin-top: 10px;
+.service-list{
+    margin-left: 3em;
+}
+
+/* CLIENT PAGE */
+
+.client-container{
+    display: flex;
+    flex-direction: column;
     text-align: center;
-  }
-  
-  .gallery img {
-    border: 2px solid #0f0f0f;
-  }
-  
-  .gallery .gallery-caption {
-    margin-left: 0;
-  } */
+    margin: 2em;
+}
+
+.client-block{
+    padding: 1em;
+    margin: 1em;
+    box-shadow: -6px 4px 10px 0px black;
+}
