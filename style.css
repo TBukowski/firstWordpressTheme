@@ -309,10 +309,19 @@ nav ul li a{
 .index-content{
     margin: 1em 2em;
     padding: 1em 0;
+    display: flex;
 }
 
 .index-content h2{
     padding: .5em 0 1em 0;
+}
+
+.index-main{
+    flex: 3;
+}
+
+.index-side{
+    flex: 1;
 }
 
 .page-heading{
