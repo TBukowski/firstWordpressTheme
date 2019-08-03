@@ -298,11 +298,18 @@ nav ul li a{
     color: #4e82a8;
 }
 
-/* ABOUT FEATURED IMAGE */
+/* ABOUT TEMPLATE */
 .top_pic_about{
     height: auto;
     width: 100%;
     margin: 0px;
+}
+
+.about-text{
+    text-align: center;
+    margin: 0 5em 1em 5em;
+    border: 5px inset #daedff;
+    padding: 1em;
 }
 
 /* INDEX TEMPLATE */
@@ -322,22 +329,25 @@ nav ul li a{
 
 .index-side{
     flex: 1;
+    padding: 1em;
+    border-left: 5px double navy;
+    background: aliceblue;
 }
 
 .page-heading{
     display: flex;
     justify-content: center;
     padding-bottom: 1em;
-    border-bottom: 5px double #062134;
+    border-bottom: 5px double navy;
 }
 
 /* PROJECT PAGE */
 
 .project-title-image{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: space-around;
-    flex: 1;
+    flex: 1; */
 }
 .group1{
     display: flex;
@@ -346,7 +356,7 @@ nav ul li a{
 
 .project-text{
     /* grid-area: description; */
-    flex: 1;
+    /* flex: 1; */
 }
 
 .project-heading{

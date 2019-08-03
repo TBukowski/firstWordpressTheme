@@ -14,9 +14,7 @@
         </div>
         <div class="index-side">
             <?php if (is_active_sidebar( 'index_sidebar' )) : ?>
-                <div>
-                    <?php dynamic_sidebar( 'index_sidebar' ); ?>
-                </div>
+                <?php dynamic_sidebar( 'index_sidebar' ); ?>
             <?php endif; ?>
         </div>
     </div>
