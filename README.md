@@ -14,4 +14,6 @@ A short bit about the project.
 - icon widget: Use :after or :before to add a dark circle behind icon -Done (used built in wordpress attributes)
 - Make header / footer nav bars fully functional -Done
 - Style sub pages
-- Add sidebar to index template
+- Add sidebar to index template -Done
+- Center align goal text, vertically on home page -Done
+- Make site responsive to different screen sizes
